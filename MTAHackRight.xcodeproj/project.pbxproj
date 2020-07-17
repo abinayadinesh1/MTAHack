@@ -16,6 +16,12 @@
 		6E551E3024C0EE19001D1D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E2E24C0EE19001D1D90 /* LaunchScreen.storyboard */; };
 		6E551E3B24C0EE19001D1D90 /* MTAHackRightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551E3A24C0EE19001D1D90 /* MTAHackRightTests.swift */; };
 		6E551E4624C0EE19001D1D90 /* MTAHackRightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551E4524C0EE19001D1D90 /* MTAHackRightUITests.swift */; };
+		6E551E5824C0FC0E001D1D90 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551E5724C0FC0E001D1D90 /* TableViewController.swift */; };
+		6E551E5A24C103B4001D1D90 /* Screen Shot 2020-07-16 at 5.52.39 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E5924C103B4001D1D90 /* Screen Shot 2020-07-16 at 5.52.39 PM.png */; };
+		6E551E5C24C1067B001D1D90 /* Train Option Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E5B24C1067A001D1D90 /* Train Option Card.png */; };
+		6E551E5E24C114A8001D1D90 /* Screen Shot 2020-07-16 at 7.04.59 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E5D24C114A8001D1D90 /* Screen Shot 2020-07-16 at 7.04.59 PM.png */; };
+		6E551E6024C12837001D1D90 /* Text Annotations (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E5F24C12836001D1D90 /* Text Annotations (1).png */; };
+		6E551E6224C12B0B001D1D90 /* Screen Shot 2020-07-16 at 8.40.28 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E551E6124C12B0A001D1D90 /* Screen Shot 2020-07-16 at 8.40.28 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		6E551E4124C0EE19001D1D90 /* MTAHackRightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTAHackRightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E551E4524C0EE19001D1D90 /* MTAHackRightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAHackRightUITests.swift; sourceTree = "<group>"; };
 		6E551E4724C0EE19001D1D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E551E5724C0FC0E001D1D90 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6E551E5924C103B4001D1D90 /* Screen Shot 2020-07-16 at 5.52.39 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-07-16 at 5.52.39 PM.png"; sourceTree = "<group>"; };
+		6E551E5B24C1067A001D1D90 /* Train Option Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Train Option Card.png"; sourceTree = "<group>"; };
+		6E551E5D24C114A8001D1D90 /* Screen Shot 2020-07-16 at 7.04.59 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-07-16 at 7.04.59 PM.png"; sourceTree = "<group>"; };
+		6E551E5F24C12836001D1D90 /* Text Annotations (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text Annotations (1).png"; sourceTree = "<group>"; };
+		6E551E6124C12B0A001D1D90 /* Screen Shot 2020-07-16 at 8.40.28 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-07-16 at 8.40.28 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +117,13 @@
 				6E551E2224C0EE12001D1D90 /* SceneDelegate.swift */,
 				6E551E2424C0EE12001D1D90 /* ViewController.swift */,
 				6E551E2624C0EE12001D1D90 /* Main.storyboard */,
+				6E551E5724C0FC0E001D1D90 /* TableViewController.swift */,
+				6E551E5924C103B4001D1D90 /* Screen Shot 2020-07-16 at 5.52.39 PM.png */,
+				6E551E5B24C1067A001D1D90 /* Train Option Card.png */,
+				6E551E5D24C114A8001D1D90 /* Screen Shot 2020-07-16 at 7.04.59 PM.png */,
 				6E551E2C24C0EE19001D1D90 /* Assets.xcassets */,
+				6E551E6124C12B0A001D1D90 /* Screen Shot 2020-07-16 at 8.40.28 PM.png */,
+				6E551E5F24C12836001D1D90 /* Text Annotations (1).png */,
 				6E551E2E24C0EE19001D1D90 /* LaunchScreen.storyboard */,
 				6E551E3124C0EE19001D1D90 /* Info.plist */,
 				6E551E2924C0EE12001D1D90 /* MTAHackRight.xcdatamodeld */,
@@ -235,9 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E551E5E24C114A8001D1D90 /* Screen Shot 2020-07-16 at 7.04.59 PM.png in Resources */,
+				6E551E6224C12B0B001D1D90 /* Screen Shot 2020-07-16 at 8.40.28 PM.png in Resources */,
+				6E551E6024C12837001D1D90 /* Text Annotations (1).png in Resources */,
 				6E551E3024C0EE19001D1D90 /* LaunchScreen.storyboard in Resources */,
 				6E551E2D24C0EE19001D1D90 /* Assets.xcassets in Resources */,
+				6E551E5C24C1067B001D1D90 /* Train Option Card.png in Resources */,
 				6E551E2824C0EE12001D1D90 /* Main.storyboard in Resources */,
+				6E551E5A24C103B4001D1D90 /* Screen Shot 2020-07-16 at 5.52.39 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +288,7 @@
 				6E551E2B24C0EE12001D1D90 /* MTAHackRight.xcdatamodeld in Sources */,
 				6E551E2524C0EE12001D1D90 /* ViewController.swift in Sources */,
 				6E551E2124C0EE12001D1D90 /* AppDelegate.swift in Sources */,
+				6E551E5824C0FC0E001D1D90 /* TableViewController.swift in Sources */,
 				6E551E2324C0EE12001D1D90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

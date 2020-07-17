@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,277 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MTAHackRight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Train" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m7-Px-miL">
+                                <rect key="frame" x="20" y="77" width="374" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="b1e-4E-hx1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRM-lT-2ac">
+                                <rect key="frame" x="20" y="145" width="301" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Kfi-S7-2ZV"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soB-pU-TwK">
+                                <rect key="frame" x="20" y="188" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="sYP-Ng-oWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Departure Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zt-9u-RY9">
+                                <rect key="frame" x="20" y="232" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vgg-mJ-MIm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-07-16 at 5.52.39 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-9N-vuh">
+                                <rect key="frame" x="0.0" y="297" width="414" height="523"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrl-Zz-Xvk">
+                                <rect key="frame" x="329" y="145" width="65" height="33"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uA-lX-20P"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train Option Card" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-6h-WJi">
+                                <rect key="frame" x="20" y="349" width="394" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train Option Card (1)" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-VC-9sY">
+                                <rect key="frame" x="20" y="465" width="394" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train Option Card (2)" translatesAutoresizingMaskIntoConstraints="NO" id="qu5-vR-IwO">
+                                <rect key="frame" x="20" y="581" width="394" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train Option Card.png" translatesAutoresizingMaskIntoConstraints="NO" id="IYO-Di-Fwt">
+                                <rect key="frame" x="20" y="697" width="394" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 7.04.59 PM" translatesAutoresizingMaskIntoConstraints="NO" id="PlE-2X-Zpf">
+                                <rect key="frame" x="-20" y="297" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-ZU-WU3">
+                                <rect key="frame" x="35" y="465" width="359" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KR3-bM-BOL" kind="show" id="IsU-ND-tQk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="top" secondItem="3m7-Px-miL" secondAttribute="bottom" constant="10" id="4hO-wb-D4v"/>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="bottom" secondItem="yrl-Zz-Xvk" secondAttribute="bottom" id="8cj-0v-0uz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4uP-9N-vuh" secondAttribute="bottom" constant="42" id="FUZ-vx-JW5"/>
+                            <constraint firstItem="1zt-9u-RY9" firstAttribute="top" secondItem="soB-pU-TwK" secondAttribute="bottom" constant="10" id="GL4-cq-5ak"/>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="top" secondItem="yrl-Zz-Xvk" secondAttribute="top" id="JNs-pR-oV6"/>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="leading" secondItem="soB-pU-TwK" secondAttribute="leading" id="NtB-7R-r4Q"/>
+                            <constraint firstItem="3m7-Px-miL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YNZ-tj-NxH"/>
+                            <constraint firstItem="1zt-9u-RY9" firstAttribute="centerX" secondItem="4uP-9N-vuh" secondAttribute="centerX" id="Ym2-zr-R0r"/>
+                            <constraint firstItem="4uP-9N-vuh" firstAttribute="top" secondItem="1zt-9u-RY9" secondAttribute="bottom" constant="31" id="bvb-8Z-NT5"/>
+                            <constraint firstItem="soB-pU-TwK" firstAttribute="trailing" secondItem="1zt-9u-RY9" secondAttribute="trailing" id="cxe-f5-s5O"/>
+                            <constraint firstItem="3m7-Px-miL" firstAttribute="trailing" secondItem="BRM-lT-2ac" secondAttribute="trailing" id="hdZ-bC-Oaa"/>
+                            <constraint firstItem="soB-pU-TwK" firstAttribute="top" secondItem="BRM-lT-2ac" secondAttribute="bottom" constant="10" id="ib6-e9-mwX"/>
+                            <constraint firstItem="3m7-Px-miL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kkv-aY-qjT"/>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="trailing" secondItem="yrl-Zz-Xvk" secondAttribute="trailing" id="ojB-cf-9n8"/>
+                            <constraint firstItem="4uP-9N-vuh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pRj-Xk-1yR"/>
+                            <constraint firstItem="BRM-lT-2ac" firstAttribute="trailing" secondItem="soB-pU-TwK" secondAttribute="trailing" id="q7E-ck-9nQ"/>
+                            <constraint firstItem="3m7-Px-miL" firstAttribute="leading" secondItem="BRM-lT-2ac" secondAttribute="leading" id="wbp-jj-1w2"/>
+                            <constraint firstItem="soB-pU-TwK" firstAttribute="leading" secondItem="1zt-9u-RY9" secondAttribute="leading" id="wwl-Tk-Dmn"/>
+                            <constraint firstItem="3m7-Px-miL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="xwN-J4-IeW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="DepartureTime" destination="1zt-9u-RY9" id="WBn-Qr-3Fj"/>
+                        <outlet property="StationFrom" destination="BRM-lT-2ac" id="qJW-VU-Eu0"/>
+                        <outlet property="StationTo" destination="soB-pU-TwK" id="VyZ-Yr-f7B"/>
+                        <outlet property="allImage" destination="PlE-2X-Zpf" id="aGh-Yf-euz"/>
+                        <outlet property="allUpcomingTrains" destination="PlE-2X-Zpf" id="hEe-xQ-D8E"/>
+                        <outlet property="train1" destination="K3W-6h-WJi" id="ZQ3-f8-cEx"/>
+                        <outlet property="train3" destination="qu5-vR-IwO" id="TH1-el-rbh"/>
+                        <outlet property="train4" destination="IYO-Di-Fwt" id="j6u-aw-Rlx"/>
+                        <outlet property="trainRight" destination="hPj-VC-9sY" id="BPL-nr-nwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s5K-eU-S2S">
+            <objects>
+                <viewController id="KR3-bM-BOL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3C-jz-585">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finding you a traincar..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVy-xC-vnM">
+                                <rect key="frame" x="74" y="382" width="285" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We're finding the least crowded car to keep you safe." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGo-d6-a6L">
+                                <rect key="frame" x="76" y="410" width="262" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qP-8d-mnw">
+                                <rect key="frame" x="76" y="392" width="262" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="36E-5t-9SF" kind="show" id="unT-hh-BEo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="IYn-wx-ceg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SIr-hU-7Cc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYD-PD-FOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846.37681159420299" y="118.52678571428571"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="va0-24-onc">
+            <objects>
+                <viewController id="36E-5t-9SF" customClass="infoViewController" customModule="MTAHackRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Zv-BN-gaD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map (1)" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-ND-avi">
+                                <rect key="frame" x="127" y="0.0" width="348" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBf-nk-92v">
+                                <rect key="frame" x="0.0" y="673" width="414" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Move to the red mark to be in line with Car 7704 when it arrives. Stay at least 6 fix away from other bystanders. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4q-Tl-Jko">
+                                        <rect key="frame" x="68" y="24" width="278" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text Annotations (1)" translatesAutoresizingMaskIntoConstraints="NO" id="YTb-Ux-c0U">
+                                <rect key="frame" x="8" y="136" width="307" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle" translatesAutoresizingMaskIntoConstraints="NO" id="QZp-Or-7XX">
+                                <rect key="frame" x="0.0" y="596" width="414" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wait for your car." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-mh-FHy">
+                                <rect key="frame" x="8" y="654" width="406" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.92549019607843142" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tx4-L8-xd5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ban-RH-Dp6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sc5-Iq-FN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518.840579710145" y="117.85714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vsq-Ur-VhI">
+            <objects>
+                <viewController id="9qV-fV-qv3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dNB-fF-E6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle" translatesAutoresizingMaskIntoConstraints="NO" id="7cq-AG-BnO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5C4-2S-rYI">
+                                <rect key="frame" x="0.0" y="114" width="414" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttomSheet" translatesAutoresizingMaskIntoConstraints="NO" id="OVk-GH-dyN">
+                                        <rect key="frame" x="8" y="165" width="414" height="189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wait for your car." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIz-Zn-1tv">
+                                        <rect key="frame" x="16" y="20" width="406" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Move to the red mark to be in line with Car 7704 when it arrives. Stay at least 6 fix away from other bystanders. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJQ-s9-jpC">
+                                        <rect key="frame" x="68" y="69" width="278" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AdT-Qc-0ps"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLL-f9-zmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195" y="117"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Map (1)" width="280" height="1624"/>
+        <image name="Screen Shot 2020-07-16 at 5.52.39 PM.png" width="252" height="328"/>
+        <image name="Screen Shot 2020-07-16 at 7.04.59 PM" width="100" height="21"/>
+        <image name="Text Annotations (1)" width="136" height="744"/>
+        <image name="Train Option Card" width="342" height="100"/>
+        <image name="Train Option Card (1)" width="342" height="100"/>
+        <image name="Train Option Card (2)" width="342" height="100"/>
+        <image name="Train Option Card.png" width="342" height="100"/>
+        <image name="buttomSheet" width="410" height="223"/>
+        <image name="handle" width="684" height="94"/>
+    </resources>
 </document>
